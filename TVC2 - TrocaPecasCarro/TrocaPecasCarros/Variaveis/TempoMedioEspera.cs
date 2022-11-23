@@ -1,0 +1,18 @@
+﻿using FLS;
+using FLS.MembershipFunctions;
+
+namespace TrocaPecasCarros.Variaveis;
+
+public class TempoMedioEspera : LinguisticVariable
+{
+	public TempoMedioEspera() : base(nameof(TempoMedioEspera))
+	{
+		MuitoPequeno = MembershipFunctions.AddTrapezoid("MP", 0.0, 0.0, 0.1, .03);
+		Pequeno = MembershipFunctions.AddTriangle("P", 0.1, 0.3, 0.5);
+		Medio = MembershipFunctions.AddTrapezoid("M", 0.4, 0.6, 0.7, 0.7);
+	}
+
+	public IMembershipFunction MuitoPequeno { get; }
+	public IMembershipFunction Pequeno { get; }
+	public IMembershipFunction Medio { get; }
+}
