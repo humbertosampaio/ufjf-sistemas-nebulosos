@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CentralPecas", "CentralPecas.csproj", "{023F7D5F-A68A-445D-935E-37290B73333B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "..\Shared\Shared.csproj", "{09E12E86-C568-439F-91FD-0C6A68893728}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{023F7D5F-A68A-445D-935E-37290B73333B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{023F7D5F-A68A-445D-935E-37290B73333B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{023F7D5F-A68A-445D-935E-37290B73333B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09E12E86-C568-439F-91FD-0C6A68893728}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09E12E86-C568-439F-91FD-0C6A68893728}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09E12E86-C568-439F-91FD-0C6A68893728}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09E12E86-C568-439F-91FD-0C6A68893728}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
