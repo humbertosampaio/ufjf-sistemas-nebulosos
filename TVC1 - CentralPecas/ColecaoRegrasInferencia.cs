@@ -12,8 +12,8 @@ public static class ColecaoRegrasInferencia
     private static readonly NumeroFuncionarios NumeroFuncionarios = NumeroFuncionarios.Instancia;
     private static readonly NumeroPecasExtras NumeroPecasExtras = NumeroPecasExtras.Instancia;
 
-    private static readonly RegraInferencia[] _regras = new RegraInferencia[]
-    {
+    private static readonly RegraInferencia[] _regras =
+    [
         new(TempoMedioEspera.MuitoPequeno,  FatorUtilizacao.Baixo,  NumeroFuncionarios.Pequeno, NumeroPecasExtras.MuitoGrande),
         new(TempoMedioEspera.MuitoPequeno,  FatorUtilizacao.Baixo,  NumeroFuncionarios.Medio,   NumeroPecasExtras.Grande),
         new(TempoMedioEspera.MuitoPequeno,  FatorUtilizacao.Baixo,  NumeroFuncionarios.Grande,  NumeroPecasExtras.PoucoGrande),
@@ -43,7 +43,7 @@ public static class ColecaoRegrasInferencia
         new(TempoMedioEspera.Medio,         FatorUtilizacao.Alto,   NumeroFuncionarios.Pequeno, NumeroPecasExtras.PoucoPequeno),
         new(TempoMedioEspera.Medio,         FatorUtilizacao.Alto,   NumeroFuncionarios.Medio,   NumeroPecasExtras.Pequeno),
         new(TempoMedioEspera.Medio,         FatorUtilizacao.Alto,   NumeroFuncionarios.Grande,  NumeroPecasExtras.MuitoPequeno),
-    };
+    ];
 
     public static readonly IReadOnlyList<FuzzyRule> Regras = _regras
         .Select(regraInferencia => Rule

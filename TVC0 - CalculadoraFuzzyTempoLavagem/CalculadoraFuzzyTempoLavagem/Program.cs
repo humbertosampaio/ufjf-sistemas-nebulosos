@@ -1,9 +1,9 @@
 ﻿using CalculadoraFuzzyTempoLavagem;
-using CalculadoraFuzzyTempoLavagem.Deffuzificacao;
+using Shared.Deffuzificacao;
 
 Input input = new();
 
-Metodo[] metodos = new[] { Metodo.CentroGravidade, Metodo.MediaPonderada };
+Metodo[] metodos = [Metodo.CentroGravidade, Metodo.MediaPonderada];
 
 foreach (Metodo metodo in metodos)
 {

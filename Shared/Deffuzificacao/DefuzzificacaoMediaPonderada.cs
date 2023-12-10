@@ -1,7 +1,9 @@
 ﻿using FLS;
 using FLS.MembershipFunctions;
+using System.Collections.Generic;
+using System.Linq;
 
-namespace CalculadoraFuzzyTempoLavagem.Deffuzificacao;
+namespace Shared.Deffuzificacao;
 
 /// <summary>
 /// Defuzzificação por média ponderada, ou Weighted Fuzzy Mean (WFM).

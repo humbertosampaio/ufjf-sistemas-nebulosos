@@ -1,6 +1,6 @@
 ﻿using FLS;
 
-namespace CentralPecas.Deffuzificacao;
+namespace Shared.Deffuzificacao;
 
 public sealed class DefuzzificacaoCentroGravidade : CoGDefuzzification
 {

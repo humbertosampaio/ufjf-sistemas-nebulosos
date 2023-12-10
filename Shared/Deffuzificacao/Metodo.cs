@@ -1,7 +1,7 @@
 ﻿using Ardalis.SmartEnum;
 using FLS;
 
-namespace CentralPecas.Deffuzificacao;
+namespace Shared.Deffuzificacao;
 
 public sealed class Metodo : SmartEnum<Metodo>
 {

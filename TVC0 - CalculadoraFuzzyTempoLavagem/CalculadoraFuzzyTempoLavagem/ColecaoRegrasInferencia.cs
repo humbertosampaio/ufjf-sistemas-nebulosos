@@ -10,8 +10,8 @@ public static class ColecaoRegrasInferencia
     private static readonly Mancha Mancha = VariaveisLinguisticas.Mancha;
     private static readonly Tempo Tempo = VariaveisLinguisticas.Tempo;
 
-    private static readonly RegraInferencia[] _regras = new RegraInferencia[]
-    {
+    private static readonly RegraInferencia[] _regras =
+    [
         new(Sujeira.PS, Mancha.SM, Tempo.MC),
         new(Sujeira.PS, Mancha.MM, Tempo.M),
         new(Sujeira.PS, Mancha.GM, Tempo.L),
@@ -21,7 +21,7 @@ public static class ColecaoRegrasInferencia
         new(Sujeira.GS, Mancha.SM, Tempo.M),
         new(Sujeira.GS, Mancha.MM, Tempo.L),
         new(Sujeira.GS, Mancha.GM, Tempo.ML)
-    };
+    ];
 
     public static readonly IReadOnlyList<FuzzyRule> Regras = _regras
         .Select(regraInferencia => Rule

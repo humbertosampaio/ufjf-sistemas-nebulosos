@@ -1,8 +1,15 @@
 ﻿using CentralPecas;
-using CentralPecas.Deffuzificacao;
+using CSharpFunctionalExtensions;
+using Shared.Deffuzificacao;
 
-Input input = Input.CriarLendoTeclado();
+Result<Input> resultadoInput = Input.CriarLendoTeclado();
+if (resultadoInput.IsFailure)
+{
+    Console.WriteLine(resultadoInput.Error);
+    return;
+}
 
+Input input = resultadoInput.Value;
 IReadOnlyCollection<Metodo> todosMetodos = Metodo.List;
 foreach (Metodo metodo in todosMetodos)
 {
